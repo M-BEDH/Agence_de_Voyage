@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer{ 
+    background-color: rgb(225, 222, 222);
+
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    border-bottom: 1.5px solid #ccc;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
+   
+}
+    
+li{
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5rem;
+}
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.9rem;
+}
+
+h3{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.mentions-legales{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    padding-top: 15px;
+    color: grey;
+}
+
+.logo-footer{
+    margin: 0 auto;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.logo-image{
+    width: 250px;
+    height: 250px;
+}
+  
