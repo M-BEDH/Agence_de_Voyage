@@ -1,0 +1,492 @@
+
+
+.titleCountry{
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  padding-top: 2em;
+}
+
+.menuTop{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.imgSenegalLign1{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.imgSenegal1{
+  width: 400px;
+  height: 250px;
+}
+
+.imgSenegal2{
+  width: 600px;
+  height: 250px;
+}
+
+.imgSenegal6{
+  width: 400px;
+  height: 250px;
+}
+
+.imgSenegalLign2{
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 2em;
+}
+
+.imgSenegal3{
+  width: 400px;
+  height: 250px;
+}
+
+.imgSenegal4{
+  width: 600px;
+  height: 250px;
+}
+
+.imgSenegal9{
+  width: 400px;
+  height: 250px;
+}
+
+/* .imgSenegalLign3{
+  display: flex;
+  justify-content: space-evenly;
+} */
+
+.imgSenegalLign4{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.imgSenegal5{
+  width: 400px;
+  height: 250px;
+}
+
+.imgSenegal10{
+  width: 600px;
+  height: 250px;
+}
+
+.imgSenegal11{
+  width: 400px;
+  height: 250px;
+}
+
+
+.descriptif{
+  text-align: center;
+}
+
+.section {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  background: white(198, 235, 241);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.section img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.petit-texte {
+  font-size: 14px;
+  color: #555;
+}
+
+.toggle-desc {
+  display: none;
+}
+
+.arrow-container {
+  margin: 15px 0;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.arrow-down {
+  font-size: 20px;
+  font-style: italic;
+  display: inline-block;
+  transition: transform 0.3s;
+
+}
+
+.description-box {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background: #e9e9e9;
+  border-radius: 5px;
+  padding: 0 15px;
+  margin: 10px 0;
+}
+
+.textBoxBlack{
+  color: #111;
+  font-size:x-large;
+  font-weight: bold;
+}
+
+/* Quand le checkbox est coché */
+.toggle-desc:checked ~ .description-box {
+  max-height: 2500px; /*Ajuste selon le contenu */
+  padding: 15px;
+}
+
+.toggle-desc:checked ~ .arrow-container .arrow-down {
+ /*transform: rotate(180deg);*/
+ transform: scale(1.5); /*agrandit la fleche et le texte*/
+}
+
+.descriptifTitle{
+  text-align: justify;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.bold{
+  font-weight: bold;
+  text-transform:uppercase;
+}
+
+
+
+
+
+/* .section {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  background: white(198, 235, 241);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.section img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.petit-texte {
+  font-size: 14px;
+  color: #555;
+} */
+
+.toggle-desc2 {
+  display: none;
+}
+
+.arrow-container2 {
+  margin: 15px 0;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.arrow-down2 {
+  font-size: 20px;
+  font-style: italic;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.description-box2 {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background: #e9e9e9;
+  border-radius: 5px;
+  padding: 0 15px;
+  margin: 10px 0;
+}
+
+.textBoxBlack2{
+  color: #111;
+  font-size:x-large;
+  font-weight: bold;
+}
+
+/* Quand le checkbox est coché */
+.toggle-desc2:checked ~ .description-box2 {
+  max-height: 2500px; /*Ajuste selon le contenu */
+  padding: 15px;
+}
+
+.toggle-desc2:checked ~ .arrow-container2 .arrow-down2 {
+ /*transform: rotate(180deg);*/
+ transform: scale(1.5); /*agrandit la fleche et le texte*/
+}
+
+
+
+
+
+/* .section {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  background: white(198, 235, 241);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.section img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.petit-texte {
+  font-size: 14px;
+  color: #555;
+} */
+
+.toggle-desc3 {
+  display: none;
+}
+
+.arrow-container3 {
+  margin: 15px 0;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.arrow-down3 {
+  font-size: 20px;
+  font-style: italic;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.description-box3 {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background: #e9e9e9;
+  border-radius: 5px;
+  padding: 0 15px;
+  margin: 10px 0;
+}
+
+.textBoxBlack3{
+  color: #111;
+  font-size:x-large;
+  font-weight: bold;
+}
+
+/* Quand le checkbox est coché */
+.toggle-desc3:checked ~ .description-box3 {
+  max-height: 4000px; /*Ajuste selon le contenu */
+  padding: 15px;
+}
+
+.toggle-desc3:checked ~ .arrow-container3 .arrow-down3 {
+ /*transform: rotate(180deg);*/
+ transform: scale(1.5); /*agrandit la fleche et le texte*/
+}
+
+
+
+/* .section {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  background: white(198, 235, 241);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.section img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.petit-texte {
+  font-size: 14px;
+  color: #555;
+} */
+
+.toggle-desc2 {
+  display: none;
+}
+
+.arrow-container2 {
+  margin: 15px 0;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.arrow-down2 {
+  font-size: 20px;
+  font-style: italic;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.description-box2 {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background: #e9e9e9;
+  border-radius: 5px;
+  padding: 0 15px;
+  margin: 10px 0;
+}
+
+.textBoxBlack2{
+  color: #111;
+  font-size:x-large;
+  font-weight: bold;
+}
+
+/* Quand le checkbox est coché */
+.toggle-desc2:checked ~ .description-box2 {
+  max-height: 2500px; /*Ajuste selon le contenu */
+  padding: 15px;
+}
+
+.toggle-desc2:checked ~ .arrow-container2 .arrow-down2 {
+ /*transform: rotate(180deg);*/
+ transform: scale(1.5); /*agrandit la fleche et le texte*/
+}
+
+
+
+
+
+/* .section {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  background: white(198, 235, 241);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.section img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.petit-texte {
+  font-size: 14px;
+  color: #555;
+} */
+
+.toggle-desc4 {
+  display: none;
+}
+
+.arrow-container4 {
+  margin: 15px 0;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.arrow-down4 {
+  font-size: 20px;
+  font-style: italic;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.description-box4 {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background: #e9e9e9;
+  border-radius: 5px;
+  padding: 0 15px;
+  margin: 10px 0;
+}
+
+.textBoxBlack4{
+  color: #111;
+  font-size:x-large;
+  font-weight: bold;
+}
+
+/* Quand le checkbox est coché */
+.toggle-desc4:checked ~ .description-box4 {
+  max-height: 4000px; /*Ajuste selon le contenu */
+  padding: 15px;
+}
+
+.toggle-desc4:checked ~ .arrow-container4 .arrow-down4 {
+ /*transform: rotate(180deg);*/
+ transform: scale(1.5); /*agrandit la fleche et le texte*/
+}
+
+
+
+
+
+/* .section {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  background: white(198, 235, 241);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.section img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.petit-texte {
+  font-size: 14px;
+  color: #555;
+} */
+
+.toggle-desc5 {
+  display: none;
+}
+
+.arrow-container5 {
+  margin: 15px 0;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.arrow-down5 {
+  font-size: 20px;
+  font-style: italic;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.description-box5 {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background: #e9e9e9;
+  border-radius: 5px;
+  padding: 0 15px;
+  margin: 10px 0;
+}
+
+.textBoxBlack5{
+  color: #111;
+  font-size:x-large;
+  font-weight: bold;
+}
+
+/* Quand le checkbox est coché */
+.toggle-desc5:checked ~ .description-box5 {
+  max-height: 4000px; /*Ajuste selon le contenu */
+  padding: 15px;
+}
+
+.toggle-desc5:checked ~ .arrow-container5 .arrow-down5 {
+ /*transform: rotate(180deg);*/
+ transform: scale(1.5); /*agrandit la fleche et le texte*/
+}
