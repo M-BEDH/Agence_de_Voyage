@@ -482,7 +482,7 @@
 
 /* Quand le checkbox est coché */
 .toggle-desc5:checked ~ .description-box5 {
-  max-height: 4000px; /*Ajuste selon le contenu */
+  max-height: 5000px; /*Ajuste selon le contenu */
   padding: 15px;
 }
 
