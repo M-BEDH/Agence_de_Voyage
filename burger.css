@@ -7,16 +7,6 @@ body:has(#menuToggle input:checked) {
     display: block;
 }
 
-#menuToggle a {
-    text-decoration: none;
-    color: #000000;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    transition: color 0.3s ease;
-    padding-left: 2rem;
-    font-weight: bold;
-}
-
 #menuToggle input {
     display: block;
     width: 45px;
@@ -117,11 +107,7 @@ input:checked ~ .overlay   {
     margin: 0;
     font-size: 22px;
     background-color: #fff;
-    border-bottom: 1px solid lightgrey;
-}
-
-#menu li label
-{
+    border-bottom: 1px solid #d3d3d3;
     cursor: pointer;
 }
 
