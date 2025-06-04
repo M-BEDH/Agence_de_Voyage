@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/84d415f625.js" crossorigin="anonymous"></script>
     <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="burger.css">
     <title>Afpa Vacances</title>
 </head>
 <body>
@@ -12,16 +13,47 @@
 
 <header>
 <h1>AfpaVoyages.com</h1>
+
+<!--MENU BURGER mobile-->
+        <nav>
+            <div id="menuToggle">
+                
+                <input type="checkbox" id="menuCheckbox" />
+                 <div class="overlay"></div>
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <ul id="menu">
+                    <li>
+                        <a href="#">
+                            <label for="menuCheckbox" onclick="this.parentNode.click();">Evasions<img src="Images/slider_arrow-227a2c578bf7.svg" alt="chevron vers la droite"></label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            <label for="menuCheckbox" onclick="this.parentNode.click();">Destinations préférées<img src="Images/slider_arrow-227a2c578bf7.svg" alt="chevron vers la droite"></label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            <label for="menuCheckbox" onclick="this.parentNode.click();">Thèmes<img src="Images/slider_arrow-227a2c578bf7.svg" alt="chevron vers la droite"></label>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
 <div class="logo-container">
         <img class="logo-image" src="Images/Logo Afpa.png" alt="Logo Afpa" />
     </div>
 
 
-<nav>
+<!--MENU DESKTOP-->
+<nav class="menu">
     <ul><li><a href="#">Evasions</a></li>
     <li><a href="#">Destinations préférées</a></li>
     <li><a href="#">Thèmes</a></li>
-    <li><a href="#">Avantages</a></li>
 </ul>
 </nav>
 
@@ -43,8 +75,6 @@
         <a href="inscription.html">Inscription</a>
     </div>
 </div>
-
- 
 </header>
 
 
