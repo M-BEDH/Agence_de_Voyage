@@ -2,7 +2,8 @@
     --primary-color: #4cddf7;
     --secondary-color: #4400e2;
     --black-color: #000;
-    --background-color: #f5f4f4;
+    --background-color: #f0eded;
+    --section-color: #f5eeee;
 }
 *{
     margin: 0;
@@ -37,7 +38,7 @@ header nav.menu ul {
 }
 
 header nav.menu ul li {
-    margin: 0 0.5rem;
+    margin: 0 1.5rem;
 }
 
 header a {
@@ -72,6 +73,10 @@ header .reservation {
 }
 
 /*********************************************************************************** #region main ***********************/
+main {
+    background-color: var(--section-color);
+}
+
 .background-image-container {
     width: 100%;
     height: 400px;
@@ -85,7 +90,7 @@ header .reservation {
     filter: brightness(0.9);
 }
 
-section {
+main section {
     width: 70%;
     margin: 0 auto;
 }
@@ -109,7 +114,7 @@ section {
 .booking-container {
   max-width: 800px;
   margin: auto;
-  background: #fff;
+  background: #F5F4F4;
   border-radius: 12px;
   box-shadow: 0 8px 16px #0000001a;
   overflow: hidden;
@@ -118,7 +123,7 @@ section {
 .tabs {
   display: flex;
   border-bottom: 2px solid #eee;
-  background: #fafafa;
+  background: #fff;
 }
 
 .tab {
@@ -184,14 +189,14 @@ button:hover {
   opacity: 0.8;
 }
 /**********************************************************************************/
-section h2 {
+main section h2 {
     text-align: center;
     margin: 1rem 0;
     font-size: 2rem;
     color: #000000;
 }
 
-section p {
+main section p {
     text-align: center;
     font-size: 1.2rem;
     color: #000000;
@@ -275,8 +280,8 @@ section p {
 
 /*********************************************************************************** #region footer */
 .footer{ 
-    background-color: rgb(225, 222, 222);
-    
+    background-color: var(--section-color);
+    width: 100%;
 }
 
 .footer-container{
@@ -285,6 +290,7 @@ section p {
     width: 70%;
     margin: 0 auto;
     border-bottom: 1.5px solid #ccc;
+    border-top: 1.5px solid #ccc;
     padding-top: 25px;
     padding-bottom: 25px;
     
