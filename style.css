@@ -10,67 +10,54 @@ header {
     height: 100px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 0 2rem;
 }
 
 header h1 {
-    width: 16%;
-}
-
-header .logo-container {
-    display: block;
-    width: 16%;
     margin: 0;
 }
-
-header nav ul {
-    display: flex;
-    list-style: none;
-    margin-right: 2rem;
-
+header nav.burger {
+    display: none; /* Cacher le menu burger par défaut */
 }
 
-header nav ul li {
+header img.logo-image{
+    display: none;
+}
+
+header nav.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav.menu ul li {
     margin: 0 0.5rem;
 }
 
-header nav ul li a{
-  position: relative;
-  display: inline-block; 
-  padding-bottom: 1px; /* espace pour la bordure */
+header a {
+    font-size: 1.1rem;
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    display: inline-block; 
+    padding-bottom: 1px; /* espace pour la bordure */
 }
 
-header nav ul li a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 100%;
-  background: #ffffff;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease-out;
+header nav.menu ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: #ffffff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-out;
 }
 
 header nav ul li a:hover::after {
-  transform: scaleX(1);
-}
-
-header .reserved {
-    background-color: #fa7798;
-    color: #000;
-    display: flex;
-    flex-wrap: wrap;
-    width: 11rem;
-    justify-content: center;
-    padding: 0.3rem 1rem;
-    border-radius: 40px;
-}
-
-.reserved {
-    display: flex;
+    transform: scaleX(1);
 }
 
 header .fa-phone {
@@ -78,14 +65,15 @@ header .fa-phone {
     color: #4400e2;
     font-size: 14px;
 }
+
 header .reservation {
     font-size: 0.9rem;
 }
 
-
+/* #region footer */
 .footer{ 
     background-color: rgb(225, 222, 222);
-
+    
 }
 
 .footer-container{
@@ -97,10 +85,10 @@ header .reservation {
     padding-top: 25px;
     padding-bottom: 25px;
     
-   
-}
     
-li{
+}
+
+footer li{
     list-style: none;
     text-decoration: none;
     color: inherit;
@@ -108,13 +96,13 @@ li{
 }
 
 
-a{
+footer a{
     text-decoration: none;
     color: inherit;
     font-size: 0.9rem;
 }
 
-h3{
+.footer-paragraph h3{
     font-size: 1rem;
     margin-bottom: 0.5rem;
     margin-left: 0.5rem;
@@ -140,39 +128,46 @@ h3{
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-
+    
 }
 
 .logo-image{
     width: 250px;
     height: 250px;
 }
-  
+
 /************************************************* Responsive Design ********************************/
 
 @media (max-width: 768px) {
-header h1 {
-    display: none;
-}
-
-   header .menu {
-       display: none; 
+    header h1 {
+        display: none;
+    }
+    
+    header img.logo-image {
+        display: block;
     }
 
+    header nav.burger {
+        display: block; /* Afficher le menu burger */
+    }
+
+    header .menu {
+        display: none; 
+    }
+    
     header nav ul {
         flex-direction: column;
         margin-right: 0;
     }
-
-    header .reserved {
+    header .pays {
         display: none;
     }
-
+    
     .footer-container {
         flex-direction: column;
         align-items: center;
     }
-
+    
     .mentions-legales {
         flex-direction: column;
         align-items: center;
