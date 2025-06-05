@@ -27,6 +27,7 @@
   opacity: 0;
   transform: scale(0.95);
   transition: opacity 0.4s, transform 0.4s;
+  background-color:rgb(227, 230, 230);
 }
 
 /* Animation d'apparition */
@@ -49,6 +50,8 @@
 
 /*-------------------ENDPOP UP -------------------------*/
 
+/*--------------------------Pop Up suite-------------------------------*/
+
 .box {
   border: 1px solid black;
   padding: 10px;
@@ -62,12 +65,46 @@
   border-radius: 4px;
   box-shadow: inset -2px -6px 5px 1px black;
   background-color: #4cddf7;
+  position: relative;
 }
 
 .offre{
   color: #4cddf7;
-  font-weight: bold;
+  font-weight:bolder;
+  text-align: justify;
 }
+
+.text-align{
+  text-align: justify;
+}
+
+.text-align2{
+  text-align: justify;
+  padding-top: 4%;
+  margin-bottom: 5%;
+}
+
+.inputName{
+  width: 40%;
+}
+
+.inputMail{
+width: 59%;
+}
+
+.mail-margin{
+  margin-bottom: 5%;
+}
+
+.popup-logo{
+  width: 30%;
+  position: absolute;
+  top: 270px;
+  left: 200px;
+}
+
+/*--------------------------End Pop Up suite-------------------------------*/
+
 
 
 .titleCountry{
