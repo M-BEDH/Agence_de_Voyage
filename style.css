@@ -205,14 +205,6 @@ main section p {
     margin-bottom: 2rem;
 } 
 
-
-
-
-
-
-
-
-
 .destination-cards {
     display: flex;
     flex-wrap: wrap;
@@ -255,9 +247,6 @@ main section p {
     transform: scaleX(1);
 }
 
-
-
-
 .destination-cards .card img{
     background-color: #f0f0f0;
     border-radius: 8px;
@@ -266,21 +255,6 @@ main section p {
     height: 250px;
     object-fit: cover;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*********************************************************************************** #region footer */
 .footer{ 
@@ -294,10 +268,8 @@ main section p {
     width: 70%;
     margin: 0 auto;
     border-bottom: 1.5px solid #ccc;
-    border-top: 1.5px solid #ccc;
     padding-top: 25px;
     padding-bottom: 25px;
-    
     
 }
 

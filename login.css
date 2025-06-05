@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #4cddf72c;
+    width: 60%;
+    margin: 0 auto;
+}
+
+header.login {
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+}
+
+header.login a {
+text-decoration: underline;
+    color: #000000;
+    font-size: 0.9rem;
+} 
+
+.return a {
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+.login h1{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+h2{
+    text-align: center;
+    padding-top: 0.5rem;
+    margin: 1rem 0 0;
+}
+
+p {
+    text-align: center;
+    margin:0 0 1rem  0;
+
+}
+
+.connexion a {
+    color: #000000;
+    text-decoration: none;
+    padding-bottom: 2px;
+}
+
+.connexion a::after {
+    padding: 0.5rem;
+    color: #000000;
+}
+
+.connexion a:hover {
+    border-bottom: 2px solid #4CDDF7;
+}
+
+.connexion, .inscription {
+    width: 100%;
+    padding: 2rem;
+    background-color: #ffffff75;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px #0000001a;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.connexion input, .inscription input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    width:2 0%;
+    padding: 0.5rem;
+    background-color: #4CDDF7;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}   
+
+button:hover {
+    opacity: 0.8;
+}
+
+form {
+    width: 40%;
+    margin: 1rem auto;
+}
