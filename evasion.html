@@ -4,21 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="evasion.css" rel="stylesheet"> <!--Permet de linker son css a son fichier index.html-->
+    <link href="style.css" rel="stylesheet"> <!--Permet de linker son css a son fichier index.html-->
+    <link href="burger.css" rel="stylesheet"> <!--Permet de linker son css a son fichier index.html-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet"> 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Evasion</title>
 </head>
 <body>
-    <header>
+        <header>
+        <h1>AfpaVoyages.com</h1>
+        <div class="overlay"></div>
+        
+        <!--MENU BURGER mobile--> 
+        <nav class="burger">
+            <div id="menuToggle">   
+                <input type="checkbox" id="menuCheckbox" />
+                <div class="overlay"></div>
+                <span></span>
+                <span></span>
+                <span></span>
+                
+                <ul id="menu">
+                    <li>
+                        <a href="evasion.html">
+                            <label for="menuCheckbox" onclick="this.parentNode.click();">Evasions</label><img src="Images/slider_arrow-227a2c578bf7.svg" alt="chevron vers la droite">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            <label for="menuCheckbox" onclick="this.parentNode.click();">Destinations préférées</label><img src="Images/slider_arrow-227a2c578bf7.svg" alt="chevron vers la droite">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            <label for="menuCheckbox" onclick="this.parentNode.click();">Thèmes</label><img src="Images/slider_arrow-227a2c578bf7.svg" alt="chevron vers la droite">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!--MENU DESKTOP-->
+        <nav class="menu">
+            <ul><li><a href="index.html">Accueil</a></li>
+                <li><a href="#">Destinations préférées</a></li>
+                <li><a href="#">Thèmes</a></li>
+            </ul>
+        </nav>
+        
+        <!--LOGO-->
+        <div>
+            <img class="logo-image" src="Images/Logo Afpa.png" alt="Logo Afpa" />
+        </div>
+        
+        <div class="pays">
+            <p><i class="fa-solid fa-globe"></i></p>
+        </div>
+        
+        <div class="connect">
+            <div class="connexion">
+                <a href="connexion.html">Connexion</a>
+            </div>
+            <div class="inscription">
+                <a href="inscription.html">Inscription</a>
+            </div>
+        </div>
+        
         
     </header>
-
+    <main>
+        <!-- Pop-up -->
+        <div id="popup" class="popup-overlay">
+            <div class="popup-content">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <h2 class="offre">50€ offerts</h2>
+            <h2>sur votre séjour de rêve</h2>
+            <p>Inscrivez-vous à notre newsletter pour recevoir une réduction de 50€ <br> sur votre prochain séjour et profitez des offres Flash en avant-première !</p>
+            <input type="text" id="prenom" placeholder="Votre prénom"/>
+            <input type="text" id="mail" placeholder="Votre adresse mail"/>
+            <button type="submit">Je m'inscris</button>
+            <p>En m'inscrivant, j'autorise AfpaVoyages à m'envoyer par email ses offres <br> promotionnelles</p>
+        </div>
+        </div> 
+     
+  
         <section>
         <div class="senegal">
             <div>
                  <p class="titleCountry">Evasion au Sénégal</p>
-            </div>
             <div class="menuTop">
                 <p>Du 10 au 20 Juillet 2025</p>
-                <p>Au départ de Bordeaux</p>
+                <p>Au départ de Paris</p>
                 <p>A partir de 1 449 €</p>
                 <p>Hôtel Riu Baobab 5*, Sénégal</p>
             </div>
@@ -40,7 +119,7 @@
             <div class="descriptif">
                 <!-- Checkbox caché -->
                 <input type="checkbox" id="toggle-desc" class="toggle-desc">
-                <label for="toggle-desc" class="arrow-container">
+                <label for="toggle-desc" class="arrow-container weightLabel">
                     <span class="arrow-down">↓ Descriptif de l'offre ci-dessous</span>
                 </label>
 
@@ -105,7 +184,8 @@
                         <p>Les repas et boissons non mentionnées dans la formule «Tout Inclus », <br>Les dépenses d'ordre personnel,<br>Les pourboires,<br>L'assurance assistance/rapatriement et annulation/bagages (en option),<br>Tout ce qui n'est pas mentionné dans la rubrique "CE PRIX COMPREND".</p>
                     </div>
                 </div>       
-            </div>
+            </div>     
+            </div>   
         </div>
         </section>
 
@@ -116,7 +196,7 @@
             </div>
             <div class="menuTop">
                 <p>Du 2 au 15 Septembre 2025</p>
-                <p>Au départ de Bordeaux</p>
+                <p>Au départ de Paris</p>
                 <p>A partir de 1 949 €</p>
                 <p>Hôtel Leopard Beach Resort 5 by Ôvoyages + Safari 1 nuit Combiné Kenya</p>
             </div>
@@ -146,7 +226,7 @@
             <div class="descriptif">
                 <!-- Checkbox caché -->
                 <input type="checkbox" id="toggle-desc2" class="toggle-desc2">
-                <label for="toggle-desc2" class="arrow-container2">
+                <label for="toggle-desc2" class="arrow-container2 weightLabel">
                     <span class="arrow-down2">↓ Descriptif de l'offre ci-dessous</span>
                 </label>
 
@@ -267,7 +347,7 @@
             </div>
             <div class="menuTop">
                 <p>Du 18 au 27 Octobre 2025</p>
-                <p>Au départ de Bordeaux</p>
+                <p>Au départ de Paris</p>
                 <p>A partir de 1 799 €</p>
                 <p>Hôtel The Westin Turtle Bay Resort & Spa Mauritius 5*</p>
             </div>
@@ -297,7 +377,7 @@
             <div class="descriptif">
                 <!-- Checkbox caché -->
                 <input type="checkbox" id="toggle-desc3" class="toggle-desc3">
-                <label for="toggle-desc3" class="arrow-container3">
+                <label for="toggle-desc3" class="arrow-container3 weightLabel">
                     <span class="arrow-down3">↓ Descriptif de l'offre ci-dessous</span>
                 </label>
                 <div class="description-box3">
@@ -391,7 +471,7 @@
             </div>
             <div class="menuTop">
                 <p>Du 20 au 31 Décembre 2025</p>
-                <p>Au départ de Bordeaux</p>
+                <p>Au départ de Paris</p>
                 <p>A partir de 2 199 €</p>
                 <p>Combiné Ubud & Jimbaran en Villas 5* avec piscine privée</p>
             </div>
@@ -414,7 +494,7 @@
             <div class="descriptif">
                 <!-- Checkbox caché -->
                 <input type="checkbox" id="toggle-desc4" class="toggle-desc4">
-                <label for="toggle-desc4" class="arrow-container4">
+                <label for="toggle-desc4" class="arrow-container4 weightLabel">
                     <span class="arrow-down4">↓ Descriptif de l'offre ci-dessous</span>
                 </label>
                 <div class="description-box4">
@@ -492,7 +572,7 @@
             </div>
             <div class="menuTop">
                 <p>Du 2 au 18 Juin 2025</p>
-                <p>Au départ de Bordeaux</p>
+                <p>Au départ de Paris</p>
                 <p>A partir de 2 499 €</p>
                 <p>Hôtel Constance Ephelia Seychelles 5*</p>
             </div>
@@ -518,7 +598,7 @@
             <div class="descriptif">
                 <!-- Checkbox caché -->
                 <input type="checkbox" id="toggle-desc5" class="toggle-desc5">
-                <label for="toggle-desc5" class="arrow-container5">
+                <label for="toggle-desc5" class="arrow-container5 weightLabel">
                     <span class="arrow-down5">↓ Descriptif de l'offre ci-dessous</span>
                 </label>
                 <div class="description-box5">
@@ -636,7 +716,64 @@
                 </div>       
             </div>
         </div>
-        </section> 
-        
+        </section>
+    </main> 
+        <footer>
+    <section class="footer"> 
+        <div class="footer-container">
+            <div class="footer-paragraph">
+                <h3>Suivez-nous sur : </h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/afpavoyages">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/afpavoyages">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/company/afpavoyages">LinkedIn</a></li>
+                    <li><a href="https://www.twitter.com/afpavoyages">Twitter</a></li>
+                    <li><a href="https://www.youtube.com/afpavoyages">YouTube</a></li>
+                </ul>
+            </div>
+            <div class="footer-paragraph">
+                <h3>A propos de Afpavoyages.com</h3>
+                <ul>
+                    <li><a href="https://www.afpavoyages.com/qui-sommes-nous">Qui sommes-nous ?</a></li>
+                    <li><a href="https://www.afpavoyages.com/nos-engagements">Nos engagements</a></li>
+                    <li><a href="https://www.afpavoyages.com/mentions-legales">Mentions légales</a></li>
+                    <li><a href="https://www.afpavoyages.com/politique-de-confidentialite">Politique de confidentialité</a></li>
+                    <li><a href="https://www.afpavoyages.com/conditions-generales-de-vente">Conditions générales de vente</a></li>
+                    <li><a href="https://www.afpavoyages.com/plan-du-site">Plan du site</a></li>
+                    <li><a href="https://www.afpavoyages.com/contact">Contact</a></li>
+                    <li><a href="https://www.afpavoyages.com/faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-paragraph">
+                <h3>Assistance et informations utiles</h3>
+                <ul>
+                    <li><a href="https://www.afpavoyages.com/assistance">Assistance</a></li>
+                    <li><a href="https://www.afpavoyages.com/informations-utiles">Informations utiles</a></li>
+                    <li><a href="https://www.afpavoyages.com/guide-de-voyage">Guide de voyage</a></li>
+                    <li><a href="https://www.afpavoyages.com/conditions-d-entree">Conditions d'entrée</a></li>
+                    <li><a href="https://www.afpavoyages.com/assurance-voyage">Assurance voyage</a></li>
+                    
+                </div>
+                <div class="footer-paragraph">
+                    <h3>Voyagez avec nous</h3>
+                    <ul>
+                        <li><a href="https://www.afpavoyages.com/offres-de-voyage">Offres de voyage</a></li>
+                        <li><a href="https://www.afpavoyages.com/reservation-en-ligne">Réservation en ligne</a></li>
+                        <li><a href="https://www.afpavoyages.com/last-minute">Last minute</a></li>
+                        <li><a href="https://www.afpavoyages.com/voyages-sur-mesure">Voyages sur mesure</a></li>
+                        <li><a href="https://www.afpavoyages.com/groupe-et-seminaire">Groupe et séminaire</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-logo">
+                <p class="mentions-legales">Ce site web est propriété de BravoNext SA, siège social Vicolo de’ Calvi 2, 6830 Chiasso, CH (n° d’immatriculation: CHE -115.704.228 et n° de TVA CHE -115.704.228). Le service de comparaison et de réservation de produits "Vols", "Vol + Hôtel" et “Train + Hôtel” est offert par Viaggiare Srl, appartenant à lastminute.com group, dont le siège social est situé Via Francesco Ferrucci, 10, 20145 Milan, Italie - Registre des Opérateurs de Voyages et de Séjours ATOUT France IM099210005. Les autres prestations touristiques sont offertes par LMnext FR, SASU au capital de 100.000 €, appartenant à lastminute.com group - 75, boulevard Haussmann 75008 Paris France. R.C.S Paris n° 809 437 072. N° TVA : FR36 809 437 072 - autre établissement 8 avenue Percier 75008 Paris, Garant: APST, Assurance RCP ALLIANZ 086 931 092, Registre des Opérateurs de Voyages et de Séjours ATOUT France IM092150005, agrément IATA n° 20-2 6439 2, ou par les partenaires de les sociétés de lastminute.com group. Tous droits réservés © 2025  afpavoyages.com</p>  
+                <div class="logo-container">
+                    <img class="logo-image" src="Images/Logo Afpa.png" alt="Logo Afpa" />
+                </div>
+            </div>
+            
+        </section>
+    </footer>
 </body>
+<script src="javascript/script.js"></script>
 </html>
