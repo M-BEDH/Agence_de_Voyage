@@ -75,6 +75,7 @@ header .reservation {
 /*********************************************************************************** #region main ***********************/
 main {
     background-color: var(--section-color);
+    padding-bottom: 7rem;
 }
 
 .background-image-container {
