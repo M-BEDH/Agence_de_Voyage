@@ -241,11 +241,11 @@ main section p {
     color: #000000;
     margin-bottom: 2rem;
 } 
-.destinations-Evasion, #themes {
+.destinations-Evasion, #destinations, #themes {
     width: 100%;
 }
 
-.destinations-Evasion h2, #themes h2 {
+.destinations-Evasion h2, #destinations h2, #themes h2 {
     width: 70%;
 }
 
