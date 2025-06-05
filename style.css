@@ -41,7 +41,7 @@ header nav.menu ul li {
     margin: 0 1.5rem;
 }
 
-header a {
+header a , .connexion a, .inscription a {
     font-size: 1.1rem;
     font-weight: bold;
     color: var(--black-color);
@@ -51,7 +51,7 @@ header a {
     padding-bottom: 1px; /* espace pour la bordure */
 }
 
-header nav.menu ul li a::after {
+header nav.menu ul li a::after, .connexion a::after , .inscription a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -64,7 +64,7 @@ header nav.menu ul li a::after {
     transition: transform 0.3s ease-out;
 }
 
-header nav ul li a:hover::after {
+header nav ul li a:hover::after, .connexion a:hover::after, .inscription a:hover::after {
     transform: scaleX(1);
 }
 
