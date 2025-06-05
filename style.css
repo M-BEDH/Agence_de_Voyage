@@ -100,14 +100,6 @@ header .pays p:hover i::after {
 }
 
 
-
-
-
-
-
-
-
-
 /*********************************************************************************** #region main ***********************/
 main {
     background-color: var(--section-color);
@@ -394,7 +386,6 @@ footer a{
     
     .destination-cards .card{
         width: 100%;
-        max-width: 300px; /* Limiter la largeur des cartes */
     }
     
     .footer-container {
@@ -406,4 +397,58 @@ footer a{
         flex-direction: column;
         align-items: center;
     }
+}
+
+@media (max-width: 380px) {
+ main section {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+
+ main section   p {
+        font-size: 1rem;
+    }
+
+    #booking-section {
+        width: 100%;
+        padding: 1rem;
+        top: 0;
+    }
+    
+    .booking-container {
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .tabs {
+        flex-direction: column;
+    }
+    
+    .tab {
+        border-bottom: none;
+        border-right: none;
+        padding: 0.5rem;
+    }
+    
+    .row {
+        flex-direction: column;
+    }
+    
+    .row > div {
+        width: 100%;
+    }
+
+    .destinations-Evasion h2, #destinations h2, #themes h2 {
+    width: 85%;
+    font-size: 1.3rem;
+}
+
+form {
+ display: none;
+}
+
+
 }
