@@ -72,6 +72,42 @@ header .reservation {
     font-size: 0.9rem;
 }
 
+header .pays p i{
+    position: relative;
+}
+
+header .pays p i::after {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    top: 100%;
+    width:120px;
+    height: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+header .pays p:hover i::after {
+    content: ' choisir un pays';
+    background-color: #b8f4ff;
+    padding: 0.5rem;
+    font-size: 0.6rem;
+    letter-spacing: 1.5px;
+    border-radius: 4px;
+    opacity: 1;
+    z-index: 1;
+    line-height: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
 /*********************************************************************************** #region main ***********************/
 main {
     background-color: var(--section-color);
@@ -109,81 +145,81 @@ main section {
 }
 
 .booking-container {
-  max-width: 800px;
-  margin: auto;
-  background: #F5F4F4;
-  border-radius: 12px;
-  box-shadow: 0 8px 16px #0000001a;
-  overflow: hidden;
+    max-width: 800px;
+    margin: auto;
+    background: #F5F4F4;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px #0000001a;
+    overflow: hidden;
 }
 
 .tabs {
-  display: flex;
-  border-bottom: 2px solid #eee;
-  background: #fff;
+    display: flex;
+    border-bottom: 2px solid #eee;
+    background: #fff;
 }
 
 .tab {
-  flex: 1;
-  padding: 1rem;
-  text-align: center;
-  cursor: pointer;
-  font-weight: bold;
-  color: #555;
-  /* transition: background 0.3s; */
+    flex: 1;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    color: #555;
+    /* transition: background 0.3s; */
 }
 
 .tab.active {
-  border-bottom: 3px solid var(--primary-color);
-  background: #fff;
-  color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    background: #fff;
+    color: var(--primary-color);
 }
 
 form {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 label {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 input,
 select {
-  padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  width: 100%;
-  box-sizing: border-box;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .row {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .row > div {
-  flex: 1;
-  min-width: 180px;
+    flex: 1;
+    min-width: 180px;
 }
 
 button {
-  background-color: var(--primary-color);
-  color: #000;
-  padding: 1rem;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
+    background-color: var(--primary-color);
+    color: #000;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 button:hover {
-  background-color: var(--primary-color);
-  opacity: 0.8;
+    background-color: var(--primary-color);
+    opacity: 0.8;
 }
 /**********************************************************************************/
 main section h2 {
@@ -205,11 +241,11 @@ main section p {
     color: #000000;
     margin-bottom: 2rem;
 } 
-.destinations-Evasion, .themes {
+.destinations-Evasion, #themes {
     width: 100%;
 }
 
-.destinations-Evasion h2, .themes h2 {
+.destinations-Evasion h2, #themes h2 {
     width: 70%;
 }
 
@@ -219,26 +255,26 @@ main section p {
     justify-content: center;
     gap: 1rem;
     padding: 2rem;
- }
+}
 
- .destination-cards .card {
-   background-color: #ffffff;
-   border-radius: 8px;
-   box-shadow: 0 2px 5px #0000001a;
-   text-align: center;
-   padding: 1rem;
-   width: 21rem;
- }
+.destination-cards .card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #0000001a;
+    text-align: center;
+    padding: 1rem;
+    width: 21rem;
+}
 .card a {
     color: #000;
 }
 
 .card h3 {
-   position: relative;
+    position: relative;
     display: inline-block; 
- }
+}
 
- .card h3::after{
+.card h3::after{
     content: '';
     position: absolute;
     left: 0;
@@ -249,9 +285,9 @@ main section p {
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s ease-out;
- }
+}
 
- .card h3:hover::after {
+.card h3:hover::after {
     transform: scaleX(1);
 }
 
@@ -339,11 +375,11 @@ footer a{
     header img.logo-image {
         display: block;
     }
-
+    
     header nav.burger {
         display: block; /* Afficher le menu burger */
     }
-
+    
     header .menu {
         display: none; 
     }
@@ -360,7 +396,7 @@ footer a{
         width: 100%;
         max-width: 300px; /* Limiter la largeur des cartes */
     }
-
+    
     .footer-container {
         flex-direction: column;
         align-items: center;
