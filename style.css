@@ -41,7 +41,7 @@ header nav.menu ul li {
     margin: 0 1.5rem;
 }
 
-header a {
+header a , .connexion a, .inscription a {
     font-size: 1.1rem;
     font-weight: bold;
     color: var(--black-color);
@@ -51,7 +51,7 @@ header a {
     padding-bottom: 1px; /* espace pour la bordure */
 }
 
-header nav.menu ul li a::after {
+header nav.menu ul li a::after, .connexion a::after , .inscription a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -64,7 +64,7 @@ header nav.menu ul li a::after {
     transition: transform 0.3s ease-out;
 }
 
-header nav ul li a:hover::after {
+header nav ul li a:hover::after, .connexion a:hover::after, .inscription a:hover::after {
     transform: scaleX(1);
 }
 
@@ -75,6 +75,7 @@ header .reservation {
 /*********************************************************************************** #region main ***********************/
 main {
     background-color: var(--section-color);
+    padding-bottom: 7rem;
 }
 
 .background-image-container {
@@ -93,10 +94,6 @@ main {
 main section {
     width: 70%;
     margin: 0 auto;
-}
-
-.destinations-Evasions {
-    width: 80%;
 }
 
 /******************************************************booking section **********************************************/
@@ -194,6 +191,12 @@ main section h2 {
     margin: 1rem 0;
     font-size: 2rem;
     color: #000000;
+    background-color: var(--background-color);
+    box-shadow: inset 0px 0px 4px 1px #fffdfd;
+    border-radius: 20px;
+    padding: 0.5rem;
+    width: 100%;
+    margin: 1rem auto;
 }
 
 main section p {
@@ -213,10 +216,11 @@ main section p {
 
  .destination-cards .card {
    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px #0000001a;
-    text-align: center;
-    padding: 1rem;
+   border-radius: 8px;
+   box-shadow: 0 2px 5px #0000001a;
+   text-align: center;
+   padding: 1rem;
+   width: 14rem;
  }
 .card a {
     color: #000;
@@ -250,6 +254,7 @@ main section p {
     padding: 1rem;
     width: 100%;
     height: 250px;
+    object-fit: cover;
 }
 
 /*********************************************************************************** #region footer */
@@ -344,6 +349,11 @@ footer a{
         display: none;
     }
     
+    .destination-cards .card{
+        width: 100%;
+        max-width: 300px; /* Limiter la largeur des cartes */
+    }
+
     .footer-container {
         flex-direction: column;
         align-items: center;
