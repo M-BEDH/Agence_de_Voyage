@@ -26,16 +26,7 @@ input[type="checkbox"]:hover {
     accent-color: #7CDB50; 
     
 }
-
-input:checked ~ .overlay {
-    width: 100vw;
-    height: 100%;
-    position: fixed;
-    top: 16rem;
-    left: 0;
-    background: #8f8e8e1f;
-    z-index: 3;   
-}   
+ 
 
 #menuToggle a
 {
@@ -85,6 +76,7 @@ input:checked ~ .overlay   {
 #menu
 {
     position: absolute;
+    z-index: 1;
     max-width: 100%;
     width: 100vw;
     max-height: 100vh;
@@ -103,7 +95,7 @@ input:checked ~ .overlay   {
 
 #menu li
 {
-    padding: 10px 0;
+    padding: 0.7rem 0;
     margin: 0;
     font-size: 22px;
     background-color: #fff;
