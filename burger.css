@@ -1,7 +1,11 @@
 /*pour empêcher le scroll de la page quand le menu est ouvert */
-body:has(#menuToggle input:checked) {
+
+/* body:has(#menuToggle input:checked) {
     overflow: hidden;
-}
+} */
+
+
+
 /* Burger Menu CSS */
 #menuToggle  {
     display: block;
