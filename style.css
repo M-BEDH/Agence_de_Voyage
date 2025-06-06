@@ -292,6 +292,14 @@ main section p {
     object-fit: cover;
 }
 
+.return-up a{
+    /* background-color: #4cddf76e; */
+    font-size: 2rem;
+    margin-left: 90%;
+    border-radius: 20px;
+    color: var(--secondary-color);
+}
+
 /*********************************************************************************** #region footer */
 .footer{ 
     background-color: var(--section-color);
@@ -357,7 +365,7 @@ footer a{
     height: 250px;
 }
 
-/************************************************* Responsive Design ********************************/
+/************************************************* Responsive Tablette - 768px ********************************/
 
 @media (max-width: 768px) {
     header h1 {
@@ -399,56 +407,58 @@ footer a{
     }
 }
 
+
+/*********************************************MOBILE-380PX****************************/
 @media (max-width: 380px) {
- main section {
+    
+    main {
+        padding-bottom: 0;
+    }
+    main section {
         width: 100%;
     }
     
-    h1 {
-        font-size: 1.5rem;
+    header a, .connexion a, .inscription a {
+        font-size: 0.8rem;
     }
-
- main section   p {
+    
+    main section h2 {
+        font-size: 1.3rem;
+        border-radius: 0;
+    }
+    main section   p {
+        width: 90%;
+        margin: auto;
         font-size: 1rem;
     }
-
+    
     #booking-section {
         width: 100%;
         padding: 1rem;
         top: 0;
+        border-radius: 0;
     }
     
     .booking-container {
         width: 100%;
         padding: 1rem;
     }
-    
-    .tabs {
-        flex-direction: column;
+    .logo-image {
+        width: 200px;
+        height: 200px;
     }
     
-    .tab {
-        border-bottom: none;
-        border-right: none;
-        padding: 0.5rem;
-    }
-    
-    .row {
-        flex-direction: column;
-    }
-    
-    .row > div {
+    .destinations-Evasion h2, #destinations h2, #themes h2 {
         width: 100%;
     }
-
-    .destinations-Evasion h2, #destinations h2, #themes h2 {
-    width: 85%;
-    font-size: 1.3rem;
-}
-
-form {
- display: none;
-}
-
-
+    
+    form {
+        display: none;
+    }
+    
+    .footer-container {
+        width: 100%;
+        display: block;
+    }
+    
 }
