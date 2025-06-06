@@ -81,7 +81,7 @@ header .pays p i::after {
     position: absolute;
     left: 1rem;
     top: 100%;
-    width:120px;
+    width:115px;
     height: 15px;
     opacity: 0;
     transition: opacity 0.3s ease;
