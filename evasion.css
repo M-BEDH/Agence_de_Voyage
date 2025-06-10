@@ -204,7 +204,7 @@ width: 59%;
 
 /* Quand le checkbox est coché */
 .toggle-desc:checked ~ .description-box {
-  max-height: 2500px; /*Ajuste selon le contenu */
+  max-height: 5000px; /*Ajuste selon le contenu */
   padding: 15px;
 }
 
@@ -500,6 +500,7 @@ to{transform:rotatey(0.5turn)}}
 
 /************************************************* Responsive Design ********************************/
 
+/**Tablette**/
 @media (max-width: 768px) {
 
 .titleCountry{
@@ -522,10 +523,28 @@ to{transform:rotatey(0.5turn)}}
   font-size: small;
   padding-top: 2%;
 }
-
  
 }
 
+
+/**Mobile**/
+@media screen {max-width: 380px;
+
+.titleCountry{
+   font-size:medium;
+   padding-top: 130px; 
+}
+
+.textBoxBlack{
+  font-size: medium;
+}
+
+.descriptifTitle{
+  font-size: smaller;
+  padding-top: 2%;
+}
+
+}
 
 
 
