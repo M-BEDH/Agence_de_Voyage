@@ -227,11 +227,12 @@ main section h2 {
     margin: 1rem auto;
 }
 
-main section p {
+#booking-section p {
     font-size: 1.2rem;
     color: #000000;
     margin-bottom: 2rem;
-} 
+}
+
 .hero p, .about p {
  text-align: center;
     font-size: 1.2rem;

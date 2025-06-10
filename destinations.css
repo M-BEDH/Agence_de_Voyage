@@ -92,6 +92,35 @@ header .pays p:hover i::after {
 
 
 
+@media screen and (max-width: 768px) {
+    #destinations section{
+        width: 100%;
+    }
+    #destinations h1 {
+        font-size: 2rem;
+    }
 
+    .descriptif {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    #destinations section h3 {
+        font-size: 1.5rem;
+        padding: 0.3rem;
+    }
+
+    #destinations .images img {
+        margin: auto;
+        /* max-width: 200px; */
+        height: 150px;
+    max-width: 100%;
+    }
+    
+    .descriptif {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+}
 
 
