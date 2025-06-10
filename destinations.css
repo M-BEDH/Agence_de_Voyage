@@ -4,11 +4,18 @@
     font-size: 2.5rem;
     padding: 1rem;
     color: #088ba3;
-    /* color: #6EB0B3; */
-
 }
 
-#destinations h3 {
+.descriptif {
+    margin: 0 auto;
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: #000000;
+    box-shadow: inset 0px 0px 4px 1px #fffdfd;
+    border-radius: 20px;
+}
+
+#destinations section h3 {
     width: 70%;
     text-align: center;
     margin: 1rem 0;

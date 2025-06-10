@@ -299,11 +299,10 @@ main section p {
 }
 
 .return-up a{
-    /* background-color: #4cddf76e; */
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-left: 90%;
     border-radius: 20px;
-    color: var(--secondary-color);
+    color: #088ba3;;
 }
 
 /*********************************************************************************** #region footer */
