@@ -316,17 +316,17 @@ main section h2 {
   top: -20rem; left: 0; right: 0; bottom: 0;
   justify-content: center;
   z-index: 10;
-  display: none; /*Cacher par défaut*/
 } 
 
-/* Affichage de la pop-up */
+/* Affichage bandeau cookie */
 .cookies-container.active {
   display: flex;
 }
 
 /* Animation d'apparition */
  .cookies-container.active .cookies-content {
-  opacity: 1;
+  opacity: 0;
+  transform: scale(1);
 }
 
 .cookies-container h2 {
@@ -339,15 +339,17 @@ main section h2 {
   }
 }
 
-/* Contenu de la pop-up avec animation */
 .cookies-content {
   width: 80vw;
+  margin: 0 auto;
   font-weight: bold;
   padding: 0.5rem;
   border-radius: 10px;
   position: relative;
   text-align: center;
-  opacity: 0;
+  opacity: 1;
+ transform: scale(0.95);
+  transition: opacity 0.4s, transform 0.4s;
   background-color:#ffffffcc;
 }
 
