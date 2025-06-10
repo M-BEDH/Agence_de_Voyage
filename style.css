@@ -228,11 +228,17 @@ main section h2 {
 }
 
 main section p {
-    text-align: center;
     font-size: 1.2rem;
     color: #000000;
     margin-bottom: 2rem;
 } 
+.hero p, .about p {
+ text-align: center;
+    font-size: 1.2rem;
+    color: #000000;
+    margin-bottom: 2rem;
+}
+
 .destinations-Evasion, #destinations, #themes {
     width: 100%;
 }
