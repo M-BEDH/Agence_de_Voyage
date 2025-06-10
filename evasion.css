@@ -544,7 +544,7 @@ to{transform:rotatey(0.5turn)}}
 
 
 /**Mobile**/
-@media (max-width: 380px;) {
+@media (max-width: 380px) {
 
 .titleCountry{
    font-size:medium;
