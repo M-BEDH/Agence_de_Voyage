@@ -65,12 +65,19 @@
   padding: 10px;
   border-radius: 4px;
   box-shadow: inset -2px -6px 5px 1px black;
-  background-color: #4cddf7;
+  background-color:#088ba3;
   position: relative;
+}
+.colorReduc{
+  color: #088ba3;
+}
+
+.colorButton{
+  background-color: #4db5c8;
 }
 
 .offre{
-  color: #4cddf7;
+  color:#088ba3;
   font-weight:bolder;
   text-align: justify;
 }
