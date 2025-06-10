@@ -469,5 +469,8 @@ footer a{
         width: 100%;
         display: block;
     }
+    .mentions-legales {
+        width: 100%;
+        padding: 1rem;    }
     
 }
