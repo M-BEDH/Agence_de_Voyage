@@ -10,6 +10,17 @@ window.onload = function() {
 document.getElementById('closeBtn').onclick = function() {
   document.getElementById('popup').classList.remove('active');
 };
+
+window.onload = function() {
+  setTimeout(function() {
+  document.getElementById('cookie').classList.add('active');  
+  }, 0);
+};
+
+// Ferme la pop-up au clic sur la croix
+document.getElementById('closeBtn').onclick = function() {
+  document.getElementById('cookie').classList.remove('active');
+}
  
 
   
