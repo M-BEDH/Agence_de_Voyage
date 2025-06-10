@@ -103,3 +103,19 @@ form {
     width: 40%;
     margin: 1rem auto;
 }
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 90%;
+    }
+    form {
+        width: 100%;
+    }
+    .connexion, .inscription {
+        width: 100%;
+    }
+    header.login {
+        height: auto;
+    }
+    
+}
