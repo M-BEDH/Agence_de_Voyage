@@ -93,9 +93,7 @@ header .pays p:hover i::after {
 /* /*********************************************************************************** #media queries ***********************/
 
 @media screen and (max-width: 768px) {
-    #destinations section{
-        width: 100%;
-    }
+   
     #destinations h1 {
         font-size: 2rem;
     }
@@ -112,7 +110,7 @@ header .pays p:hover i::after {
 
     #destinations .images img {
         margin-left: 1rem;
-        height: 150px;
+        /* height: 150px; */
     }
     
     .descriptif {
