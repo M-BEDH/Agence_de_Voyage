@@ -90,7 +90,7 @@ header .pays p:hover i::after {
     line-height: 1rem;
 }
 
-/* /*********************************************************************************** #region media queries ***********************/
+/* /*********************************************************************************** #media queries ***********************/
 
 @media screen and (max-width: 768px) {
     #destinations section{
@@ -111,6 +111,7 @@ header .pays p:hover i::after {
     }
 
     #destinations .images img {
+        margin-left: 1rem;
         height: 150px;
     }
     
