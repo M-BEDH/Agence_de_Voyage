@@ -309,7 +309,6 @@ main section h2 {
     color: #088ba3;;
 }
 
-/********************************************************************************************COOKIES SECTION **************************************************/
 /********************************************************************************************COOKIES SECTION **************************************************/Add commentMore actions
  /* Fond semi-transparent couvrant tout l'écran */
 .cookies-container {
@@ -319,7 +318,7 @@ main section h2 {
   z-index: 10;
 } 
 
-/* Affichage de la pop-up */
+/* Affichage le bandeau cookie */
 .cookies-container.active {
   display: flex;
 }
@@ -328,7 +327,6 @@ main section h2 {
     margin-bottom: 1rem;
 }
 
-/* Contenu de la pop-up avec animation */
 .cookies-content {
   width: 80vw;
   margin: auto;
@@ -371,10 +369,22 @@ span.close {
   cursor: pointer;
   color: #646363;
 }
-.close:hover {
+
+span.close:hover {
   color: #e74c3c;
 }
 
+#acceptBtn:hover {
+ color: #005a14;
+ background-color: #ffffff;
+ opacity: 1;
+}
+
+#rejectBtn:hover {
+ background-color: #ffffff;
+ color: #e74c3c;
+ opacity: 1;
+}
 
 
 /*********************************************************************************** #region footer **************/
