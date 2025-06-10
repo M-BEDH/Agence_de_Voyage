@@ -262,7 +262,7 @@ width: 59%;
 
 /* Quand le checkbox est coché */
 .toggle-desc2:checked ~ .description-box2 {
-  max-height: 2500px; /*Ajuste selon le contenu */
+  max-height: 3000px; /*Ajuste selon le contenu */
   padding: 15px;
 }
 
@@ -397,7 +397,7 @@ width: 59%;
 
 /* Quand le checkbox est coché */
 .toggle-desc5:checked ~ .description-box5 {
-  max-height: 4000px; /*Ajuste selon le contenu */
+  max-height: 4500px; /*Ajuste selon le contenu */
   padding: 15px;
 }
 
@@ -523,12 +523,28 @@ to{transform:rotatey(0.5turn)}}
   font-size: small;
   padding-top: 2%;
 }
+
+.toggle-desc2:checked ~ .description-box2 {
+  max-height: 5000px; /*Ajuste selon le contenu */
+}
+
+.toggle-desc3:checked ~ .description-box3 {
+  max-height: 7000px; /*Ajuste selon le contenu */
+}
+
+.toggle-desc4:checked ~ .description-box4 {
+  max-height: 5000px; /*Ajuste selon le contenu */
+}
+
+.toggle-desc5:checked ~ .description-box5 {
+  max-height: 8000px; /*Ajuste selon le contenu */
+}
  
 }
 
 
 /**Mobile**/
-@media screen {max-width: 380px;
+@media (max-width: 380px;) {
 
 .titleCountry{
    font-size:medium;
@@ -542,6 +558,22 @@ to{transform:rotatey(0.5turn)}}
 .descriptifTitle{
   font-size: smaller;
   padding-top: 2%;
+}
+
+.toggle-desc2:checked ~ .description-box2 {
+  max-height: 1000px; /*Ajuste selon le contenu */
+}
+
+.toggle-desc3:checked ~ .description-box3 {
+  max-height: 14000px; /*Ajuste selon le contenu */
+}
+
+.toggle-desc4:checked ~ .description-box4 {
+  max-height: 10000px; /*Ajuste selon le contenu */
+}
+
+.toggle-desc5:checked ~ .description-box5 {
+  max-height: 16000px; /*Ajuste selon le contenu */
 }
 
 }
