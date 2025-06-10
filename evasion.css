@@ -74,6 +74,11 @@
 
 .colorButton{
   background-color: #4db5c8;
+  font-size: smaller;
+}
+
+.button{
+  font-weight: lighter;
 }
 
 .offre{
@@ -555,13 +560,28 @@ to{transform:rotatey(0.5turn)}}
   font-size: medium;
 }
 
+.textBoxBlack2{
+  font-size: medium;
+}
+
+.textBoxBlack3{
+  font-size: medium;
+}
+
+.textBoxBlack4{
+  font-size: medium;
+}
+.textBoxBlack5{
+  font-size: medium;
+}
+
 .descriptifTitle{
   font-size: smaller;
   padding-top: 2%;
 }
 
 .toggle-desc2:checked ~ .description-box2 {
-  max-height: 1000px; /*Ajuste selon le contenu */
+  max-height: 10000px; /*Ajuste selon le contenu */
 }
 
 .toggle-desc3:checked ~ .description-box3 {
@@ -576,19 +596,45 @@ to{transform:rotatey(0.5turn)}}
   max-height: 16000px; /*Ajuste selon le contenu */
 }
 
-/*Resposive Carousel*/
+/*Responsive Mobile Pop-Up*/
+
+.popup-content {
+  background: #fff;
+  padding: 10px 20px;
+  width: 50%;
+  border-radius: 10px;
+  position: relative;
+  min-width: 200px;
+  right: 20%;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  text-align: center;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.4s, transform 0.4s;
+  background-color:rgb(227, 230, 230);
+  font-size: small;
+}
+
+.popup-logo{
+  width: 30%;
+  top:82%;
+
+}
+
+
+/*Resposive Mobile Carousel*/
 
 .titleCountry{
-   font-size:smaller;
+   font-size:small;
    padding-top: 130px; 
 }
 
 .textBoxBlack{
-  font-size: smaller;
+  font-size: small;
 }
 
 .descriptifTitle{
-  font-size: x-small;
+  font-size: smaller;
   padding-top: 2%;
 }
 
@@ -599,25 +645,27 @@ width:220px;
 }
 
 .arrow-down {
-  font-size: 15px;
+  font-size: 19px;
   }
    
 
 .arrow-down2 {
-  font-size: 15px;
+  font-size: 19px;
   }
 
 .arrow-down3 {
-  font-size: 15px;
+  font-size: 19px;
   }
 
 .arrow-down4 {
-  font-size: 15px;
+  font-size: 19px;
   }
 
 .arrow-down5 {
-  font-size: 15px;
+  font-size: 19px;
   }
+
+
 
 }
 
