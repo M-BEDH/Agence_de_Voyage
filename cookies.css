@@ -2,7 +2,7 @@
  /* Fond semi-transparent couvrant tout l'écran */
 .popup-overlay, .cookie-overlay {
   display: none;
-  position: fixed;
+  /* position: fixed; */
   top: 0; left: 0; right: 0; bottom: 0;
   background: rgba(0,0,0,0.5);
   justify-content: center;
@@ -47,68 +47,4 @@
 }
 .close-btn:hover {
   color: #e74c3c;
-}
-
-
-.box {
-  border: 1px solid black;
-  padding: 10px;
-  border-radius: 4px;
-  box-shadow: inset -2px -6px 5px 1px black;
-}
-
-.box-inscription{
-  border: 1px solid black;
-  padding: 10px;
-  border-radius: 4px;
-  box-shadow: inset -2px -6px 5px 1px black;
-  background-color:#088ba3;
-  position: relative;
-}
-.colorReduc{
-  color: #088ba3;
-}
-
-.colorButton{
-  background-color: #4db5c8;
-  font-size: smaller;
-}
-
-.button{
-  font-weight: lighter;
-}
-
-.offre{
-  color:#088ba3;
-  font-weight:bolder;
-  text-align: justify;
-}
-
-.text-align{
-  text-align: justify;
-}
-
-.text-align2{
-  text-align: justify;
-  padding-top: 4%;
-  margin-bottom: 5%;
-}
-
-.inputName{
-  width: 40%;
-}
-
-.inputMail{
-width: 59%;
-}
-
-.mail-margin{
-  margin-bottom: 5%;
-}
-
-.popup-logo{
-  width: 30%;
-  position: absolute;
-  top: 270px;
-  left: 200px;
 }

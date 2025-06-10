@@ -14,7 +14,7 @@ document.getElementById('closeBtn').onclick = function() {
 window.onload = function() {
   setTimeout(function() {
   document.getElementById('cookie').classList.add('active');  
-  }, 0);
+  }, 1000);
 };
 
 // Ferme la pop-up au clic sur la croix
