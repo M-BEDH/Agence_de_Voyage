@@ -127,6 +127,8 @@ main section {
 /******************************************************booking section **********************************************/
 
 #booking-section {
+    width: 70%;
+    margin: 0 auto;
     border-radius: 20px;
     padding: 1rem;
     position: relative;
@@ -215,6 +217,7 @@ button:hover {
 }
 /**********************************************************************************/
 main section h2 {
+    width: 70%;
     text-align: center;
     margin: 1rem 0;
     font-size: 2rem;
