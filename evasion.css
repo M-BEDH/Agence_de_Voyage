@@ -576,6 +576,49 @@ to{transform:rotatey(0.5turn)}}
   max-height: 16000px; /*Ajuste selon le contenu */
 }
 
+/*Resposive Carousel*/
+
+.titleCountry{
+   font-size:smaller;
+   padding-top: 130px; 
+}
+
+.textBoxBlack{
+  font-size: smaller;
+}
+
+.descriptifTitle{
+  font-size: x-small;
+  padding-top: 2%;
+}
+
+*{box-sizing : border-box}
+img{max-width:100%}
+.contenu_carou_auto{
+width:220px;
+}
+
+.arrow-down {
+  font-size: 15px;
+  }
+   
+
+.arrow-down2 {
+  font-size: 15px;
+  }
+
+.arrow-down3 {
+  font-size: 15px;
+  }
+
+.arrow-down4 {
+  font-size: 15px;
+  }
+
+.arrow-down5 {
+  font-size: 15px;
+  }
+
 }
 
 
