@@ -403,7 +403,7 @@ footer a{
     
     .footer-container {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
     
     .mentions-legales {
