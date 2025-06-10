@@ -1,3 +1,27 @@
+#destinations h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 1rem;
+    color: #088ba3;
+    /* color: #6EB0B3; */
+
+}
+
+#destinations h3 {
+    width: 70%;
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 2rem;
+    color: #000000;
+    background-color: var(--background-color);
+    box-shadow: inset 0px 0px 4px 1px #fffdfd;
+    border-radius: 20px;
+    padding: 0.5rem;
+    width: 100%;
+    margin: 1rem auto;
+}
+
 #destinations .images img{
 max-width: 300px;
 height: 250px;
@@ -61,12 +85,5 @@ header .pays p:hover i::after {
 
 
 
-/*#inde {
-
-}
- #autriche
-#alpes
-#grece
-#japon */
 
 
