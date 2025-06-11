@@ -617,12 +617,12 @@ to{transform:rotatey(0.5turn)}}
 
 .popup-logo{
   width: 30%;
-  top:82%;
-
+  position: absolute;
+  top:300px;
+  left:115px;
 }
 
-
-/*Resposive Mobile Carousel*/
+/*Responsive Mobile Carousel*/
 
 .titleCountry{
    font-size:small;
@@ -637,6 +637,8 @@ to{transform:rotatey(0.5turn)}}
   font-size: smaller;
   padding-top: 2%;
 }
+
+
 
 *{box-sizing : border-box}
 img{max-width:100%}
@@ -664,8 +666,6 @@ width:220px;
 .arrow-down5 {
   font-size: 19px;
   }
-
-
 
 }
 
