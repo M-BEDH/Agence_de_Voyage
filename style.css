@@ -485,7 +485,10 @@ footer a{
     header .pays {
         display: none;
     }
-    
+    #booking-section {
+        top: -15rem;
+    } 
+
     .destination-cards .card{
         width: 100%;
     }
