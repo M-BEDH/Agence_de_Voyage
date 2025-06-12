@@ -618,8 +618,8 @@ to{transform:rotatey(0.5turn)}}
 .popup-logo{
   width: 30%;
   position: absolute;
-  top:300px;
-  left:115px;
+  top: 80%;
+  left: 37%;
 }
 
 /*Responsive Mobile Carousel*/
