@@ -52,15 +52,8 @@ p {
     text-decoration: none;
     padding-bottom: 2px;
 }
-
-.connexion a::after {
-    padding: 0.5rem;
-    color: #000000;
-}
-
 .connexion a:hover {
-    border-bottom: 2px solid #4CDDF7;
-}
+text-decoration: underline;}
 
 .connexion, .inscription {
     width: 100%;
